@@ -1,0 +1,154 @@
+:root {
+    --color-1:#E2E9F9;
+    --color-2:#373C47;
+    --color-3:#1f67ec;
+    --color-4:#87A0CE;
+    --color-4-light:#85aff82c;
+    --color-5:#ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-1);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0.5rem;
+}
+
+#workspace {
+    padding:3.5rem 3rem;
+    border-radius: 10px;
+    background-color: var(--color-5);
+    width: 1100px;
+    max-width: 100%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:1.5rem 0 3rem;
+    flex-wrap: wrap-reverse;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bold;
+    padding: 0.7rem ;
+}
+a:hover {
+    background-color: var(--color-3);
+    color: var(--color-5);
+    border-radius: 5px;
+}
+
+form {
+    position: relative;
+}
+input[type="search"] {
+    padding: 10px 10px 10px 35px;
+    border-radius: 2px;
+    height: 45px;
+    width: 300px;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 1.07rem;
+}
+form i {
+    position: absolute;
+    color: gray;
+    left: 10px;
+    bottom: 13px;
+    font-size: 1.1rem;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.users > div {
+    padding: 1.7rem 1.2rem 2rem;
+    display: flex;
+    border-radius: 15px;
+    background-color: var(--color-4-light);    
+}
+.users > div:hover {
+    border: 1px solid var(--color-4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.users img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.user-details {
+    padding-top: 0.5rem;
+}
+
+h3 {
+    font-weight: 700;
+}
+.users p {
+    margin: 3px 0 13px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.users button {
+    background-color: var(--color-5);
+    color: var(--color-3);
+    border: 1px solid var(--color-3);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 3px 8px;
+}
+
+@media(max-width:910px) {
+    #workspace {
+        padding: 2.5rem 1.3rem;
+    }
+
+    .header li {
+        margin-bottom: 0.7rem;
+    }
+
+    form,
+    input[type="search"],
+    .nav,
+    .header ul {
+        width: 100%;
+    }
+
+    .header ul {
+        justify-content: space-between;
+    }
+}
