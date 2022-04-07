@@ -152,10 +152,10 @@ h3 {
         justify-content: space-between;
     }
 }
-@media(max-width:380px) {
+@media(max-width:370px) {
     html {
       font-size: 15px;
     }
     #workspace {
-    padding: 2rem 0.7rem;
+    padding: 2rem 0.5rem;
 }
