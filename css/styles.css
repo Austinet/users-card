@@ -134,7 +134,7 @@ h3 {
 
 @media(max-width:910px) {
     #workspace {
-        padding: 2rem 0.7rem;
+        padding: 2.5rem 1.5rem;
     }
 
     .header li {
@@ -151,4 +151,11 @@ h3 {
     .header ul {
         justify-content: space-between;
     }
+}
+@media(max-width:380px) {
+    html {
+      font-size: 15px;
+    }
+    #workspace {
+    padding: 2rem 0.7rem;
 }
