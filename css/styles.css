@@ -42,7 +42,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:1.5rem 0 3rem;
+    margin:1.2rem 0 3rem;
     flex-wrap: wrap-reverse;
 }
 .header ul {
@@ -134,7 +134,7 @@ h3 {
 
 @media(max-width:910px) {
     #workspace {
-        padding: 2.3rem 1rem;
+        padding: 2rem 0.7rem;
     }
 
     .header li {
